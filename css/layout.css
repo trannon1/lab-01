@@ -1,11 +1,13 @@
 body {
     height: 100%;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     background-color: #315481;
     background-image: linear-gradient(to bottom, #315481, #918e82 100%);
     background-attachment: fixed;
+    border: 1px solid black;
     text-align: center;
-    text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+    line-height: 75px;
   }
   
   h1, .h1,
@@ -15,4 +17,107 @@ body {
   h5, .h5,
   h6, .h6 {
     font-family: 'Roboto Slab', serif;
+  }
+
+  .board {
+    margin: auto;
+  }
+  
+  .boxA, .boxB, .boxC, .boxD, .boxE, .boxF, .boxG, .boxH, .boxI {
+    border: 1px solid black;
+    font-size: 56px;
+    margin: 0px;
+    display: inline-block;
+    float: left;
+  }
+
+  @media only screen{
+    .board {
+      height: 1075px;
+      width: 500px;
+    }
+    .boxA {
+      width: 480px;
+      height: 75px;
+      background-color: red;
+    }
+    .boxB {
+      width: 480px;
+      height: 150px;
+      background-color: orange;
+    }
+    .boxC, .boxD {
+      width: 480px;
+      height: 125px;
+      background-color: yellow;
+    }
+    .boxD {
+      background-color: green;
+    }
+    .boxE, .boxF, .boxG, .boxH {
+      width: 240px;
+      height: 250px;
+      background-color: blue;
+    }
+    .boxF {
+      background-color: purple;
+    }
+    .boxG {
+      background-color: violet;
+    }
+    .boxH {
+      background-color: grey;
+    }
+    .boxI {
+      width: 480px;
+      height: 80px;
+      background-color: white;
+    }
+  }
+
+  @media only screen and (min-width: 1000px){
+    .board {
+      height: 720px;
+      width: 970px;
+    }
+    .boxA, .boxB, .boxC, .boxD, .boxI {
+      display: inline-block;
+    }
+    .boxA {
+      width: 960px;
+      height: 100px;
+      background-color: white;
+    }
+    .boxB {
+      width: 200px;
+      height: 600px;
+      background-color: grey;
+    }
+    .boxC, .boxD {
+      width: 380px;
+      height: 200px;
+      background-color: violet;
+    }
+    .boxD {
+      background-color: purple;
+    }
+    .boxE, .boxF, .boxG, .boxH {
+      width: 190px;
+      height: 250px;
+      background-color: blue;
+    }
+    .boxF {
+      background-color: green;
+    }
+    .boxG {
+      background-color: yellow;
+    }
+    .boxH {
+      background-color: orange;
+    }
+    .boxI {
+      width: 760px;
+      height: 150px;
+      background-color: red;
+    }
   }
