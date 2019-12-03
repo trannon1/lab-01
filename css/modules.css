@@ -4,36 +4,67 @@
   
   .boxA {
     border: 1px solid black;
-    background-color: #315481;
+    background-color: red;
     font-size: 56px;
     margin: 0px;
   }
   
   .boxB {
     border: 1px solid black;
-    background-color: #315481;
+    background-color: orange;
     font-size: 56px;
     margin: 0px;
   }
   
-  .boxCD {
+  .boxC {
     border: 1px solid black;
-    background-color: #315481;
+    background-color: yellow;
+    font-size: 56px;
+    margin: 0px;
+  }
+
+  .boxD {
+    border: 1px solid black;
+    background-color: green;
     font-size: 56px;
     margin: 0px;
   }
   
-  .boxEFGH {
+  .boxE {
     border: 1px solid black;
-    background-color: #315481;
+    background-color: blue;
     font-size: 56px;
     margin: 0px;
     display: inline-block;
   }
   
+  .boxF {
+    border: 1px solid black;
+    background-color: purple;
+    font-size: 56px;
+    margin: 0px;
+    display: inline-block;
+  }
+
+  .boxG {
+    border: 1px solid black;
+    background-color: violet;
+    font-size: 56px;
+    margin: 0px;
+    display: inline-block;
+  }
+
+  .boxH {
+    border: 1px solid black;
+    background-color: grey;
+    font-size: 56px;
+    margin: 0px;
+    display: inline-block;
+  }
+
   .boxI {
     border: 1px solid black;
-    background-color: #315481;
+    background-color: white;
     font-size: 56px;
     margin: 0px;
   }
@@ -51,11 +82,27 @@
       width: 480px;
       height: 150px;
     }
-    .boxCD {
+    .boxC {
       width: 480px;
       height: 125px;
     }
-    .boxEFGH {
+    .boxD {
+      width: 480px;
+      height: 125px;
+    }
+    .boxE {
+      width: 240px;
+      height: 250px;
+    }
+    .boxF {
+      width: 240px;
+      height: 250px;
+    }
+    .boxG {
+      width: 240px;
+      height: 250px;
+    }
+    .boxH {
       width: 240px;
       height: 250px;
     }
@@ -65,34 +112,62 @@
     }
   }
 
-  @media only screen and (min-width: 501px){
+  @media only screen and (min-width: 1000px){
     .board {
       height: 720px;
       width: 970px;
     }
-    .boxA, .boxB, .boxCD, .boxI {
+    .boxA, .boxB, .boxC, .boxD, .boxI {
       display: inline-block;
     }
     .boxA {
       width: 960px;
       height: 100px;
+      background-color: white;
     }
     .boxB {
       width: 200px;
       height: 600px;
       float: left;
+      background-color: grey;
     }
-    .boxCD {
+    .boxC {
       width: 380px;
       height: 200px;
+      background-color: violet;
     }
-    .boxEFGH {
+    .boxD {
+      width: 380px;
+      height: 200px;
+      background-color: purple;
+    }
+    .boxE {
       width: 190px;
       height: 250px;
       float: right;
+      background-color: blue;
+    }
+    .boxF {
+      width: 190px;
+      height: 250px;
+      float: right;
+      background-color: green;
+    }
+    .boxG {
+      width: 190px;
+      height: 250px;
+      float: right;
+      background-color: yellow;
+    }
+    .boxH {
+      width: 190px;
+      height: 250px;
+      float: right;
+      background-color: orange;
     }
     .boxI {
       width: 760px;
       height: 150px;
+      background-color: red;
     }
   }
