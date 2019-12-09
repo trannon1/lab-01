@@ -19,105 +19,254 @@ body {
     font-family: 'Roboto Slab', serif;
   }
 
-  .board {
-    margin: auto;
-  }
-  
+.board {
+  margin: auto;
+}
+
   .boxA, .boxB, .boxC, .boxD, .boxE, .boxF, .boxG, .boxH, .boxI {
     border: 1px solid black;
     font-size: 56px;
-    margin: 0px;
-    display: inline-block;
-    float: left;
+    margin: 0;
+    display: block;
+    width: minmax(50px, 100%);
+    height: minmax(50px, 100%);
   }
 
-  @media only screen{
+  @media only screen and (min-width: 480px) and (max-width: 768px){
     .board {
-      height: 1075px;
-      width: 500px;
+      height: 1065px;
+      display: grid;
+      grid-template-columns: 50%;
+      grid-template-rows: 1/7;
+      grid-auto-flow: row;
     }
     .boxA {
-      width: 480px;
-      height: 75px;
       background-color: red;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
     }
     .boxB {
-      width: 480px;
-      height: 150px;
       background-color: orange;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
     }
     .boxC, .boxD {
-      width: 480px;
-      height: 125px;
       background-color: yellow;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 3;
     }
     .boxD {
       background-color: green;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 4;
     }
     .boxE, .boxF, .boxG, .boxH {
-      width: 240px;
-      height: 250px;
       background-color: blue;
+    }
+    .boxE {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 5;
     }
     .boxF {
       background-color: purple;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 5;
     }
     .boxG {
       background-color: violet;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 6;
     }
     .boxH {
       background-color: grey;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 6;
     }
     .boxI {
-      width: 480px;
-      height: 80px;
       background-color: white;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 7;
+      grid-row-end: 7;
     }
   }
 
-  @media only screen and (min-width: 1000px){
+  @media only screen and (min-width: 768px) and (max-width: 1100px){
     .board {
-      height: 720px;
-      width: 970px;
-    }
-    .boxA, .boxB, .boxC, .boxD, .boxI {
-      display: inline-block;
+      height: 720px; 
+      display: grid;
+      grid-template-columns: 20%;
+      grid-template-rows: 25%;
+      grid-auto-flow: row;
     }
     .boxA {
-      width: 960px;
-      height: 100px;
-      background-color: white;
+      
+      background-color: grey;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 1;
     }
     .boxB {
-      width: 200px;
-      height: 600px;
-      background-color: grey;
+      
+      background-color: white;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 5;
     }
     .boxC, .boxD {
-      width: 380px;
-      height: 200px;
+      
+      background-color: purple;
+    }
+    .boxC {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+    .boxD {
       background-color: violet;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+    .boxE, .boxF, .boxG, .boxH {
+      
+      background-color: green;
+    }
+    .boxE {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .boxF {
+      background-color: blue;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .boxG {
+      background-color: orange;
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .boxH {
+      background-color: yellow;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .boxI {
+      
+      background-color: rebeccapurple;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+  }
+
+  @media only screen and (min-width: 1100px){
+    .board {
+      height: 720px; 
+      display: grid;
+      grid-template-columns: 20%;
+      grid-template-rows: 25%;
+      grid-auto-flow: row;
+    }
+    .boxA {
+      
+      background-color: white;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    .boxB {
+      
+      background-color: grey;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+    .boxC, .boxD {
+      
+      background-color: violet;
+    }
+    .boxC {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 2;
     }
     .boxD {
       background-color: purple;
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 2;
     }
     .boxE, .boxF, .boxG, .boxH {
-      width: 190px;
-      height: 250px;
+      
       background-color: blue;
+    }
+    .boxE {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 3;
     }
     .boxF {
       background-color: green;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 3;
     }
     .boxG {
       background-color: yellow;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 3;
     }
     .boxH {
       background-color: orange;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 3;
     }
     .boxI {
-      width: 760px;
-      height: 150px;
+      
       background-color: red;
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 4;
     }
   }
